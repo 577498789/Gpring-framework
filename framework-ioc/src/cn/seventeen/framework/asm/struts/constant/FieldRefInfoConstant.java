@@ -17,4 +17,7 @@ public class FieldRefInfoConstant implements ConstantStruts{
     public void setValue(byte[] value) {
         this.fieldRef = value;
     }
+
+
+    // 啊啊啊啊
 }
