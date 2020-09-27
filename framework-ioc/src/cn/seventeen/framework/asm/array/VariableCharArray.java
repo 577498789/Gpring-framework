@@ -3,7 +3,6 @@ package cn.seventeen.framework.asm.array;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Iterator;
-import java.util.function.Consumer;
 
 public class VariableCharArray implements VariableArray, Cloneable, Serializable {
     private static final long serialVersionUID = 8683452581122892190L;

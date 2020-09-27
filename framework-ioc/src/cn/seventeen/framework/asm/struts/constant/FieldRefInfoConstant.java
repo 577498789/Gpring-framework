@@ -8,6 +8,10 @@ package cn.seventeen.framework.asm.struts.constant;
  */
 public class FieldRefInfoConstant implements ConstantStruts{
 
+    // 常量类型
+    private byte constantType;
+
+    // 常量值byte数组
     private byte[] fieldRef;
 
     public byte[] getValue() {
@@ -19,5 +23,4 @@ public class FieldRefInfoConstant implements ConstantStruts{
     }
 
 
-    // 啊啊啊啊aaaaaaaaaaaaaaaaa
 }
