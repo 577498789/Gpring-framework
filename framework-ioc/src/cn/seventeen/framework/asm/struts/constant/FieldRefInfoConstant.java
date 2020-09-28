@@ -9,18 +9,11 @@ package cn.seventeen.framework.asm.struts.constant;
 public class FieldRefInfoConstant implements ConstantStruts{
 
     // 常量类型
-    private byte constantType;
+    private byte constantType = CONSTANT_FIELD_REF_INDEX;
 
-    // 常量值byte数组
-    private byte[] fieldRef;
+    // 指向字段描述符的引用（Constant_NameAndType_Info）
+    private int infoIndex;
 
-    public byte[] getValue() {
-        return fieldRef;
-    }
-
-    public void setValue(byte[] value) {
-        this.fieldRef = value;
-    }
 
 
 }
