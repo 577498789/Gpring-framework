@@ -9,10 +9,10 @@ public class FieldStruts {
     // 字段修饰符
     public int ACCESS_FLAGS;
 
-    // 名称的常量引用
+    // 对该字段“简单名称”的常量引用
     public int nameIndex;
 
-    // 字段描述符的引用
+    // 字段描述符的引用，I
     public int infoIndex;
 
 }
