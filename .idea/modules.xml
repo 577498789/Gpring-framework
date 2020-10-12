@@ -2,7 +2,14 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+<<<<<<< HEAD
       <module fileurl="file://$PROJECT_DIR$/framework-ioc/framework-ioc.iml" filepath="$PROJECT_DIR$/framework-ioc/framework-ioc.iml" />
+=======
+      <module fileurl="file://$PROJECT_DIR$/Gpring-framework.iml" filepath="$PROJECT_DIR$/Gpring-framework.iml" />
+      <module fileurl="file://$PROJECT_DIR$/framework-bean/framework-bean.iml" filepath="$PROJECT_DIR$/framework-bean/framework-bean.iml" />
+      <module fileurl="file://$PROJECT_DIR$/framework-context/framework-context.iml" filepath="$PROJECT_DIR$/framework-context/framework-context.iml" />
+      <module fileurl="file://$PROJECT_DIR$/framework-core/framework-core.iml" filepath="$PROJECT_DIR$/framework-core/framework-core.iml" />
+>>>>>>> origin/master
     </modules>
   </component>
 </project>

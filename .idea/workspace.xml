@@ -2,51 +2,35 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7e18db8f-4be8-4e1f-b93a-ea75ad8ebe7e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/framework-bean/target/classes/cn/seventeen/bean/BeanDefinition.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/framework-bean/target/classes/cn/seventeen/bean/annotation/Componet.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/framework-bean/target/classes/cn/seventeen/bean/factory/BeanDefinitionRegister.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/framework-bean/target/classes/cn/seventeen/bean/factory/BeanFactory.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/framework-bean/target/classes/cn/seventeen/bean/factory/HierarchicalBeanFactory.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/framework-bean/target/classes/cn/seventeen/bean/factory/ListableBeanFactory.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/framework-bean/target/classes/cn/seventeen/bean/factory/processor/BeanFactoryPostProcessor.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/framework-bean/target/classes/cn/seventeen/bean/processor/AbstractBeanDefinition.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/framework-bean/target/classes/cn/seventeen/bean/processor/BeanDefinitionPostProcessor.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/framework-bean/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/framework-bean/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/framework-context/target/classes/cn/seventeen/context/support/AbstractApplicationContext.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/framework-context/target/classes/cn/seventeen/context/support/ApplicationContext.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/framework-context/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/framework-context/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/framework-core/target/classes/cn/seventeen/bean/AbstractBeanDefinition.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/framework-core/target/classes/cn/seventeen/bean/BeanDefinition.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/framework-core/target/classes/cn/seventeen/bean/annotation/Componet.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/framework-core/target/classes/cn/seventeen/bean/factory/AbstractBeanFactory.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/framework-core/target/classes/cn/seventeen/bean/factory/BeanDefinitionRegister.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/framework-core/target/classes/cn/seventeen/bean/factory/BeanFactory.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/framework-core/target/classes/cn/seventeen/bean/factory/DefaultListableBeanFactory.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/framework-core/target/classes/cn/seventeen/bean/factory/HierarchicalBeanFactory.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/framework-core/target/classes/cn/seventeen/bean/factory/ListableBeanFactory.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/framework-core/target/classes/cn/seventeen/bean/factory/error/BeanFactoryTypeMismatchException.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/framework-core/target/classes/cn/seventeen/bean/factory/processor/BeanFactoryPostProcessor.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/framework-core/target/classes/cn/seventeen/bean/processor/BeanDefinitionPostProcessor.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/framework-core/target/classes/cn/seventeen/context/support/AbstractApplicationContext.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/framework-core/target/classes/cn/seventeen/context/support/ApplicationContext.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/framework-core/target/classes/cn/seventeen/context/util/ApplicationContextLoggerUtil.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/framework-core/target/classes/cn/seventeen/core/env/Environment.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/framework-core/target/classes/cn/seventeen/core/env/ResourceLoader.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/framework-core/target/classes/cn/seventeen/core/event/ApplicationEventPublish.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/framework-core/target/classes/cn/seventeen/core/resource/Environment.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/framework-core/target/classes/cn/seventeen/core/resource/MessageResource.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/framework-core/target/classes/cn/seventeen/core/resource/ResourceLoader.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/framework-core/target/classes/cn/seventeen/core/resource/ResourcePatternResolver.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/framework-core/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/framework-core/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/framework-ioc/src/cn/seventeen/framework/asm/struts/ClassStrutsConstant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/framework-ioc/src/cn/seventeen/framework/asm/struts/FieldStrutsConstant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/framework-ioc/src/cn/seventeen/framework/asm/struts/constant/ClassInfoConstant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/framework-ioc/src/cn/seventeen/framework/asm/struts/constant/DoubleInfoConstant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/framework-ioc/src/cn/seventeen/framework/asm/struts/constant/FloatInfoConstant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/framework-ioc/src/cn/seventeen/framework/asm/struts/constant/IntegerInfoConstant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/framework-ioc/src/cn/seventeen/framework/asm/struts/constant/InterfaceMethodRefInfoConstant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/framework-ioc/src/cn/seventeen/framework/asm/struts/constant/InvokeDynamicInfoConstant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/framework-ioc/src/cn/seventeen/framework/asm/struts/constant/LongInfoConstant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/framework-ioc/src/cn/seventeen/framework/asm/struts/constant/MethodHandlerInfoConstant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/framework-ioc/src/cn/seventeen/framework/asm/struts/constant/MethodRefInfoConstant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/framework-ioc/src/cn/seventeen/framework/asm/struts/constant/MethodTypeInfoConstant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/framework-ioc/src/cn/seventeen/framework/asm/struts/constant/NameAndTypeInfoConstant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/framework-ioc/src/cn/seventeen/framework/asm/struts/constant/StringInfoConstant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/framework-ioc/src/cn/seventeen/framework/asm/struts/constant/Utf8InfoConstant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/framework-ioc/src/cn/seventeen/framework/asm/array/VariableCharArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/framework-ioc/src/cn/seventeen/framework/asm/array/VariableCharArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/framework-ioc/src/cn/seventeen/framework/asm/struts/FieldStruts.java" beforeDir="false" afterPath="$PROJECT_DIR$/framework-ioc/src/cn/seventeen/framework/asm/struts/FieldStruts.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/framework-ioc/src/cn/seventeen/framework/asm/struts/MethodStruts.java" beforeDir="false" afterPath="$PROJECT_DIR$/framework-ioc/src/cn/seventeen/framework/asm/struts/MethodStruts.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/framework-ioc/src/cn/seventeen/framework/asm/struts/StrutsTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/framework-ioc/src/cn/seventeen/framework/asm/struts/StrutsTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/framework-ioc/src/cn/seventeen/framework/asm/struts/constant/ConstantStruts.java" beforeDir="false" afterPath="$PROJECT_DIR$/framework-ioc/src/cn/seventeen/framework/asm/struts/constant/ConstantStruts.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/framework-ioc/src/cn/seventeen/framework/asm/struts/constant/FieldRefInfoConstant.java" beforeDir="false" afterPath="$PROJECT_DIR$/framework-ioc/src/cn/seventeen/framework/asm/struts/constant/FieldRefInfoConstant.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -125,7 +109,7 @@
         <entry file="file://$PROJECT_DIR$/framework-ioc/src/cn/seventeen/framework/asm/Asm.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="84">
-              <caret line="2" column="18" lean-forward="true" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+              <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -134,13 +118,7 @@
         <entry file="file://$PROJECT_DIR$/framework-ioc/src/cn/seventeen/framework/asm/struts/constant/FieldRefInfoConstant.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="333">
-              <caret line="16" selection-start-line="16" selection-end-line="16" />
-              <folding>
-                <element signature="e#188#189#0" expanded="true" />
-                <element signature="e#219#220#0" expanded="true" />
-                <element signature="e#275#276#0" expanded="true" />
-                <element signature="e#312#313#0" expanded="true" />
-              </folding>
+              <caret line="19" selection-start-line="19" selection-end-line="19" />
             </state>
           </provider>
         </entry>
@@ -158,7 +136,7 @@
         <entry file="file://$PROJECT_DIR$/framework-bean/src/main/java/cn/seventeen/bean/factory/processor/BeanFactoryPostProcessor.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="391">
-              <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+              <caret line="29" selection-start-line="29" selection-end-line="29" />
             </state>
           </provider>
         </entry>
@@ -176,7 +154,7 @@
         <entry file="file://$PROJECT_DIR$/framework-context/src/main/java/cn/seventeen/context/support/AbstractApplicationContext.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="294">
-              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -197,7 +175,7 @@
         <entry file="file://$PROJECT_DIR$/framework-core/src/main/java/cn/seventeen/bean/factory/error/BeanFactoryTypeMismatchException.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="294">
-              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
             </state>
           </provider>
         </entry>
@@ -317,11 +295,6 @@
         <option name="importAutomatically" value="true" />
       </MavenImportingSettings>
     </option>
-    <option name="enabledProfiles">
-      <list>
-        <option value="jdk-1.8" />
-      </list>
-    </option>
   </component>
   <component name="MavenProjectNavigator">
     <treeState>
@@ -345,6 +318,7 @@
     <option name="width" value="1304" />
     <option name="height" value="1000" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -587,66 +561,6 @@
               <item name="framework-ioc" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="framework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="framework" type="462c0819:PsiDirectoryNode" />
-              <item name="framework-ioc" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="framework" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="framework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="framework" type="462c0819:PsiDirectoryNode" />
-              <item name="framework-ioc" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="framework" type="462c0819:PsiDirectoryNode" />
-              <item name="asm" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="framework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="framework" type="462c0819:PsiDirectoryNode" />
-              <item name="framework-ioc" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="framework" type="462c0819:PsiDirectoryNode" />
-              <item name="asm" type="462c0819:PsiDirectoryNode" />
-              <item name="array" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="framework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="framework" type="462c0819:PsiDirectoryNode" />
-              <item name="framework-ioc" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="framework" type="462c0819:PsiDirectoryNode" />
-              <item name="asm" type="462c0819:PsiDirectoryNode" />
-              <item name="struts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="framework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="framework" type="462c0819:PsiDirectoryNode" />
-              <item name="framework-ioc" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="framework" type="462c0819:PsiDirectoryNode" />
-              <item name="asm" type="462c0819:PsiDirectoryNode" />
-              <item name="struts" type="462c0819:PsiDirectoryNode" />
-              <item name="constant" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="framework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="framework" type="462c0819:PsiDirectoryNode" />
-              <item name="framework-ioc" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="framework" type="462c0819:PsiDirectoryNode" />
-              <item name="ioc" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="framework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="framework" type="462c0819:PsiDirectoryNode" />
-              <item name="framework-ioc" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="framework" type="462c0819:PsiDirectoryNode" />
-              <item name="ioc" type="462c0819:PsiDirectoryNode" />
-              <item name="annotation" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -658,7 +572,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1602509438612" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1602510520008" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -733,7 +647,7 @@
       <workItem from="1600335571038" duration="5454000" />
       <workItem from="1600436075641" duration="3517000" />
       <workItem from="1602159288288" duration="857000" />
-      <workItem from="1602501287280" duration="4149000" />
+      <workItem from="1602501287280" duration="4742000" />
     </task>
     <task id="LOCAL-00001" summary="修改content模块的依赖，以及将以前未忽略的idea文件忽略">
       <created>1602504026953</created>
@@ -746,7 +660,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="139598000" />
+    <option name="totallyTimeSpent" value="140191000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -759,7 +673,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.57350564" visible="true" weight="0.3033049" />
       <window_info id="Image Layers" order="1" />
@@ -1121,13 +1034,7 @@
     <entry file="file://$PROJECT_DIR$/framework-ioc/src/cn/seventeen/framework/asm/struts/constant/FieldRefInfoConstant.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="333">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-          <folding>
-            <element signature="e#188#189#0" expanded="true" />
-            <element signature="e#219#220#0" expanded="true" />
-            <element signature="e#275#276#0" expanded="true" />
-            <element signature="e#312#313#0" expanded="true" />
-          </folding>
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
         </state>
       </provider>
     </entry>
@@ -1162,7 +1069,7 @@
     <entry file="file://$PROJECT_DIR$/framework-core/src/main/java/cn/seventeen/bean/factory/error/BeanFactoryTypeMismatchException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="294">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>
@@ -1186,7 +1093,7 @@
     <entry file="file://$PROJECT_DIR$/framework-context/src/main/java/cn/seventeen/context/support/AbstractApplicationContext.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="294">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1196,14 +1103,14 @@
     <entry file="file://$PROJECT_DIR$/framework-bean/src/main/java/cn/seventeen/bean/factory/processor/BeanFactoryPostProcessor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
-          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/framework-ioc/src/cn/seventeen/framework/asm/Asm.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
-          <caret line="2" column="18" lean-forward="true" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
         </state>
       </provider>
     </entry>
