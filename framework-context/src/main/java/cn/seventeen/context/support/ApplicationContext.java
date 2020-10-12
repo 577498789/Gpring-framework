@@ -1,5 +1,11 @@
 package cn.seventeen.context.support;
 
+import cn.seventeen.bean.factory.BeanFactory;
+import cn.seventeen.core.env.Environment;
+import cn.seventeen.core.event.ApplicationEventPublish;
+import cn.seventeen.core.resource.MessageResource;
+import cn.seventeen.core.resource.ResourcePatternResolver;
+
 /**
  * ApplicationContext接口，程序上下文，叫运行环境更加适合
  * 该接口规定了一个运行环境所拥有的行为
@@ -14,7 +20,7 @@ package cn.seventeen.context.support;
  *
  * 对外则表示为一个ApplicationContext的子类
  */
-public interface ApplicationContext extends Environment,MessageResource,ResourcePatternResolver,BeanFactory,ApplicationEventPublish{
+public interface ApplicationContext extends Environment, MessageResource, ResourcePatternResolver, BeanFactory, ApplicationEventPublish {
 
     //获取Environment
     public abstract Environment getEnvironment();

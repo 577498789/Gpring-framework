@@ -1,6 +1,11 @@
 package cn.seventeen.context.support;
 
-public class AbstractApplicationContext implements ApplicationContext{
+import cn.seventeen.bean.factory.BeanFactory;
+import cn.seventeen.core.env.Environment;
+import cn.seventeen.core.resource.MessageResource;
+
+public abstract class AbstractApplicationContext implements ApplicationContext{
+
 
     private Environment environment;
 
@@ -8,17 +13,7 @@ public class AbstractApplicationContext implements ApplicationContext{
 
     private MessageResource messageResource;
 
-    public Environment getEnvironment() {
-        return null;
-    }
 
-    public void setEnvironment(Environment environment) {
-
-    }
-
-    public BeanFactory getBeanFactory() {
-        return null;
-    }
 
     /**
      * 该方法就是程序上下文的初始化方法
