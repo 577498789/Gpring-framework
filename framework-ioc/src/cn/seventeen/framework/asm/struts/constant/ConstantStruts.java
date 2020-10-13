@@ -55,6 +55,11 @@ public interface ConstantStruts {
 
 
     // TODO 使用适配器模式来解决获得value的问题，对应的constant使用对应的适配器解析其内部值的引用、传递问题
-
+    default int getLength(int constantType) throws Exception{
+        if(constantType<CONSTANT_STRUTS_LENGTH_TABLE.length && constantType>=0)
+            return CONSTANT_STRUTS_LENGTH_TABLE[constantType];
+        else
+            throw new Exception("常量类型不存在，无法获得其数据长度");
+    }
 
 }

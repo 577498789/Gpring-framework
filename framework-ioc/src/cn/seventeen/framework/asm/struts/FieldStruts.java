@@ -15,4 +15,6 @@ public class FieldStruts {
     // 字段描述符的引用，I
     public int infoIndex;
 
+    public FieldStruts(){}
+
 }
