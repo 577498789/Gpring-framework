@@ -7,13 +7,13 @@ package cn.seventeen.framework.asm.struts;
 public class FieldStruts {
 
     // 字段修饰符
-    public int ACCESS_FLAGS;
+    public byte[] ACCESS_FLAGS;
 
     // 对该字段“简单名称”的常量引用
-    public int nameIndex;
+    public byte[] nameIndex;
 
     // 字段描述符的引用，I
-    public int infoIndex;
+    public byte[] infoIndex;
 
     public FieldStruts(){}
 
