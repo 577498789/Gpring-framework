@@ -4,6 +4,8 @@ import cn.seventeen.framework.asm.struts.util.exception.ByteArrayConvertExceptio
 import cn.seventeen.framework.asm.struts.util.exception.ByteArrayToIntException;
 import cn.seventeen.framework.asm.struts.util.exception.ByteArrayToLongException;
 
+import java.util.Arrays;
+
 public class ByteUtils {
 
     public static int toInt(byte[] bytes) throws ByteArrayConvertException {
@@ -32,6 +34,36 @@ public class ByteUtils {
             value = (value << 8) + bytes[i];
         }
         return value;
+    }
+
+    public static byte[]toBytes(short value){
+        byte [] bytes = new byte[2];
+        int temp;
+        for(int i = 0;i<4;i++){
+            bytes[i]= (byte)(value%(2<<8));
+            value = (short) (value>>8);
+        }
+        return bytes;
+    }
+
+    public static byte[]toBytes(int value){
+        byte [] bytes = new byte[4];
+        int temp;
+        for(int i = 0;i<4;i++){
+            bytes[i]= (byte)(value%(2<<8));
+            value = value>>8;
+        }
+        return bytes;
+    }
+
+    public static byte[]toBytes(long value){
+        byte [] bytes = new byte[8];
+        int temp;
+        for(byte b:bytes){
+            b= (byte)(value%(2<<8));
+            value = value>>8;
+        }
+        return bytes;
     }
 
 }

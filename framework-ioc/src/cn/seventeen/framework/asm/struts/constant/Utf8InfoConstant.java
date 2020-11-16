@@ -1,7 +1,13 @@
 package cn.seventeen.framework.asm.struts.constant;
 
+import cn.seventeen.framework.asm.struts.util.ByteUtils;
+import com.sun.xml.internal.messaging.saaj.util.ByteInputStream;
+import com.sun.xml.internal.ws.util.StringUtils;
+import jdk.internal.util.xml.impl.ReaderUTF8;
 import sun.nio.cs.ext.GBK;
 
+import javax.xml.stream.StreamFilter;
+import java.io.*;
 import java.util.Arrays;
 
 /**
@@ -24,8 +30,12 @@ public class Utf8InfoConstant implements ConstantStruts {
     }
 
     public Utf8InfoConstant(byte[] bytes) {
-        this.length = Arrays.copyOfRange(bytes, 0, 1);
-        this.value = Arrays.copyOfRange(bytes, 2, bytes.length - 1);
+        this.length = ByteUtils.toBytes(bytes.length);
+        this.value = bytes;
     }
 
+    @Override
+    public String toString(){
+        return new String(this.value);
+    }
 }

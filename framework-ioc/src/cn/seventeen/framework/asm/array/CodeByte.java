@@ -63,6 +63,22 @@ public class CodeByte {
 
     private int index = 0;
 
+    public int getIndex() {
+        return index;
+    }
+
+    public void setIndex(int index) {
+        this.index = index;
+    }
+
+    public int getSize() {
+        return size;
+    }
+
+    public void setSize(int size) {
+        this.size = size;
+    }
+
     public void asByte(InputStream in)throws IOException {
         // 检查inputStream的安全性
         if(in ==null){

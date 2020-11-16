@@ -3,6 +3,7 @@ package cn.seventeen.framework.asm;
 import cn.seventeen.framework.asm.array.CodeByte;
 import cn.seventeen.framework.asm.struts.StrutsTree;
 import cn.seventeen.framework.asm.struts.constant.ConstantStruts;
+import cn.seventeen.framework.asm.struts.constant.Utf8InfoConstant;
 import cn.seventeen.framework.asm.struts.util.ByteUtils;
 import com.sun.org.apache.bcel.internal.classfile.Code;
 
@@ -11,6 +12,8 @@ import java.io.InputStream;
 import java.lang.reflect.Constructor;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.FutureTask;
+import java.util.concurrent.locks.Lock;
 
 public class AsmCodeLoader {
 
@@ -35,43 +38,106 @@ public class AsmCodeLoader {
     public StrutsTree asStrutsTree(CodeByte classCode) throws Exception {
         StrutsTree strutsTree = new StrutsTree();
         int index = 0;
+        // 获得魔数
         byte[] magic = classCode.getData(4);
         strutsTree.setMagic(magic);
         System.out.println("这是魔数：" + magic[0] + " " + magic[1] + " " + magic[2] + " " + magic[3]);
 
-
+        // 获得最小版本号
         byte[] major = classCode.getData(2);
         strutsTree.setMajor_version(major);
         int majorVersion = (((int) major[0]) << 8) + major[1];
+        // 获得最大版本号
         byte[] minor = classCode.getData(2);
         strutsTree.setMinor_version(minor);
         int minorVersion = (((int) minor[0]) << 8) + minor[1];
         System.out.println("次版本号" + majorVersion);
         System.out.println("主版本号：" + minorVersion);
 
+        // 获得常量池
         byte[] constant_pool_count = classCode.getData(2);
+        System.out.println(new String());
         int constantPoolCount = ByteUtils.toInt(constant_pool_count);
         strutsTree.setConstant_pool_count(constant_pool_count);
         ConstantStruts[] constantStrutsList = new ConstantStruts[constantPoolCount - 1];
+        System.out.println("常量池总长度:"+constantPoolCount);
         for (int i = 1; i < constantPoolCount; i++) {
             // 获得常量类型
             int constant_type = classCode.getData(1)[0];
             // 如果是UTF8字符串类型，就进行解析
             if(constant_type==ConstantStruts.CONSTANT_UTF8_INDEX){
-                // TODO 解析UTF8字符串
-                int stringLength = ByteUtils.toInt(classCode.getData(2));
-
-                for(int j=0;j<stringLength;j++){
-                    
-                }
+                Utf8InfoConstant utf8InfoConstant = new Utf8InfoConstant(classCode.getData(ByteUtils.toInt(classCode.getData(2))));
+                constantStrutsList[i] = utf8InfoConstant;
+                System.out.println(utf8InfoConstant.toString());
+            }else if(constant_type==0){
+                // 不是UTF8类型，直接使用构造器进行数据初始化
+                System.out.println("第"+i+"个常量类型编号为："+constant_type);
+                System.out.println("当前地址偏移为："+new String (classCode.getData(1),"ASCII"));
+                System.out.println("当前地址偏移为："+new String (classCode.getData(1),"ASCII"));
+                System.out.println("当前地址偏移为："+new String (classCode.getData(1),"ASCII"));
+                System.out.println("当前地址偏移为："+new String (classCode.getData(1),"ASCII"));
+                System.out.println("当前地址偏移为："+new String (classCode.getData(1),"ASCII"));
+                System.out.println("当前地址偏移为："+new String (classCode.getData(1),"ASCII"));
+                System.out.println("当前地址偏移为："+new String (classCode.getData(1),"ASCII"));
+                System.out.println("当前地址偏移为："+new String (classCode.getData(1),"ASCII"));
+                System.out.println("当前地址偏移为："+new String (classCode.getData(1),"ASCII"));
+                System.out.println("当前地址偏移为："+new String (classCode.getData(1),"ASCII"));
+                System.out.println("当前地址偏移为："+new String (classCode.getData(1),"ASCII"));
+                System.out.println("当前地址偏移为："+new String (classCode.getData(1),"ASCII"));
+                System.out.println("当前地址偏移为："+new String (classCode.getData(1),"ASCII"));
+                System.out.println("当前地址偏移为："+new String (classCode.getData(1),"ASCII"));
+                System.out.println("当前地址偏移为："+new String (classCode.getData(1),"ASCII"));
+                System.out.println("当前地址偏移为："+new String (classCode.getData(1),"ASCII"));
+                System.out.println("当前地址偏移为："+new String (classCode.getData(1),"ASCII"));
+                System.out.println("当前地址偏移为："+new String (classCode.getData(1),"ASCII"));
+                System.out.println("当前地址偏移为："+classCode.getIndex());
             }else{
                 // 不是UTF8类型，直接使用构造器进行数据初始化
+                System.out.println("第"+i+"个常量类型编号为："+constant_type);
+                System.out.println("当前地址偏移为："+classCode.getIndex());
                 Class clazz = ConstantStruts.CONSTANT_CLASSES[constant_type - 1];
                 Constructor constantStrutsConstructor = clazz.getConstructor(byte[].class);
                 constantStrutsList[i] = (ConstantStruts) constantStrutsConstructor.newInstance(classCode.getData(ConstantStruts.CONSTANT_STRUTS_LENGTH_TABLE[constant_type-1]));
             }
+        }
+
+        // 获得该类的访问标志
+        strutsTree.setAccess_flags(classCode.getData(2));
+
+        // 获得类索引
+        strutsTree.setThis_class(classCode.getData(2));
+
+        // 获得父类索引
+        strutsTree.setSuper_class(classCode.getData(2));
+
+        // 获得接口索引集合
+        strutsTree.setInterfaces_count(classCode.getData(2));
+        int interfaceCount = ByteUtils.toInt(strutsTree.getInterfaces_count());
+        byte[][] a = new byte[1][2];
+        byte[] bytes = a[0];
+        System.out.println("byte数组的长度为"+bytes.length);
+        System.out.println("byte数组的长度为"+bytes.length);
+        System.out.println("byte数组的长度为"+bytes.length);
+        System.out.println("byte数组的长度为"+bytes.length);
+        System.out.println("byte数组的长度为"+bytes.length);
+        System.out.println("byte数组的长度为"+bytes.length);
+        System.out.println("byte数组的长度为"+bytes.length);
+        System.out.println("byte数组的长度为"+bytes.length);
+        System.out.println("byte数组的长度为"+bytes.length);
+        System.out.println("byte数组的长度为"+bytes.length);
+        System.out.println("byte数组的长度为"+bytes.length);
+        System.out.println("byte数组的长度为"+bytes.length);
+        System.out.println("byte数组的长度为"+bytes.length);
+        System.out.println("byte数组的长度为"+bytes.length);
+        System.out.println("byte数组的长度为"+bytes.length);
+        System.out.println("byte数组的长度为"+bytes.length);
+        System.out.println("byte数组的长度为"+bytes.length);
+        System.out.println("byte数组的长度为"+bytes.length);
+        System.out.println("byte数组的长度为"+bytes.length);
+        for(int i=0;i<interfaceCount;i++){
 
         }
+
         return strutsTree;
     }
 }
