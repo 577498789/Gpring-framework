@@ -59,8 +59,10 @@ public class CodeByte {
 
     private CodeByteNode current;
 
+    // 总长度
     private int size;
 
+    // 当前下标位置
     private int index = 0;
 
     public int getIndex() {
